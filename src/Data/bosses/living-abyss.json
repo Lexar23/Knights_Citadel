@@ -1,0 +1,226 @@
+{
+  "id": "living-abyss",
+  "name": "The Living Abyss",
+  "siglas": "LLA",
+  "url": "/jefes/living-abyss",
+  "img": "/Assets/enemies/LLA.webp",
+  "listImg": "/Assets/enemies/silhouette/LLA.webp",
+  "background": "/Assets/backgrounds/bossBackgrounds/ADR_bg.webp",
+  "treasures": [
+    "red",
+    "pergamino",
+    "speed"
+  ],
+  "team": [
+    {
+      "cookieId": "BBP",
+      "focus": "Daño de Monstruos",
+      "builds": [
+        {
+          "biscuit": "4 Daño Eléctrico",
+          "setLabel": "X2/2/2",
+          "toppings": [
+            {
+              "type": "apple",
+              "count": 1
+            },
+            {
+              "type": "raspberry",
+              "count": 2
+            },
+            {
+              "type": "caramel",
+              "count": 2
+            }
+          ],
+          "stats": [
+            {
+              "label": "ATK SPD",
+              "value": "33.1%",
+              "key": true
+            },
+            {
+              "label": "Crit",
+              "value": "34%",
+              "key": true
+            },
+            {
+              "label": "ATK",
+              "value": "Máx."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cookieId": "CP",
+      "focus": "Daño a Monstruos",
+      "builds": [
+        {
+          "biscuit": "4 HP",
+          "setLabel": "X3/2/1",
+          "toppings": [
+            {
+              "type": "peanut",
+              "count": 2
+            },
+            {
+              "type": "apple",
+              "count": 2
+            },
+            {
+              "type": "chocolate",
+              "count": 1
+            }
+          ],
+          "stats": [
+            {
+              "label": "HP",
+              "value": "+138%",
+              "key": true
+            },
+            {
+              "label": "CD",
+              "value": "14.5%",
+              "key": true
+            },
+            {
+              "label": "Crit",
+              "value": "Máx.",
+              "note": "en sub-stats"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cookieId": "WA",
+      "focus": "Daño a Monstruos",
+      "builds": [
+        {
+          "biscuit": "4 Daño Viento",
+          "setLabel": "X4/2",
+          "toppings": [
+            {
+              "type": "raspberry",
+              "count": 3
+            },
+            {
+              "type": "caramel",
+              "count": 2
+            }
+          ],
+          "stats": [
+            {
+              "label": "ATK SPD",
+              "value": "Máx.",
+              "note": "revisa la tabla de CJ en las notas",
+              "key": true
+            },
+            {
+              "label": "ATK",
+              "value": "Máx.",
+              "note": "en sub-stats"
+            },
+            {
+              "label": "Crit",
+              "value": "Máx.",
+              "note": "en sub-stats"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cookieId": "CF",
+      "focus": "Daño Aum. a Aliados",
+      "builds": [
+        {
+          "biscuit": "4 CD",
+          "setLabel": "X6",
+          "toppings": [
+            {
+              "type": "chocolate",
+              "count": 5
+            }
+          ],
+          "stats": [
+            {
+              "label": "CD",
+              "value": "58.7 – 58.9%",
+              "key": true
+            },
+            {
+              "label": "ATK SPD",
+              "value": "+6%"
+            },
+            {
+              "label": "ATK",
+              "value": "Máx.",
+              "note": "en sub-stats"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cookieId": "MB",
+      "focus": "Fuegos Artificiales",
+      "builds": [
+        {
+          "biscuit": "4 CD",
+          "setLabel": "X4/2",
+          "toppings": [
+            {
+              "type": "chocolate",
+              "count": 3
+            },
+            {
+              "type": "candy",
+              "count": 2
+            }
+          ],
+          "stats": [
+            {
+              "label": "CD",
+              "value": "50.4 – 50.7%",
+              "key": true
+            },
+            {
+              "label": "Amp Buff",
+              "value": "17 – 25%"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Mejora los Magic Candy de Cream Puff y Blueberry Pie al 30; aumentan bastante el daño de ambos.",
+    "El Crystal Jam de Wind Archer debe estar al 15 mínimo y él debe tener al menos 2 estrellas.",
+    "Todas las estrellas de Wind aumentan daño, en especial la quinta y la sexta.",
+    "El máximo de Amp Buff en Bunny es 25%; mientras menos Bonds de Amp Buff tengas, debes aumentar 1% a tu build.",
+    "Dependiendo del lvl de CJ de Wind debes usar un % diferente de ATK SPD: lvl 15–19 → 28.9 – 28% · lvl 21–25 → 27.8 – 26.7% · lvl 26–30 → 26.6 – 26%."
+  ],
+  "timing": [
+    "Al inicio del pasillo → Reloj en Ferret → cuando Ferret se lance, Reloj en Bunny → cuando Bunny se lance, Reloj en Wind Archer.",
+    "Después de que Wind se lance → desactivas el automático (o le pones el Reloj a Ferret) y lanzas a Blueberry Pie en el 58.500 – 58.250 → y lanzas a Cream Puff en el 58.000.",
+    "Dejas que Ferret y Bunny se lancen en automático (si tienes los % de CD exactos, Wind debe lanzarse en el 43.625) → Reloj en Cream Puff → Reloj en Bunny y esperas a que Ferret se lance sola en el 32.625.",
+    "En el seg 28 dejas el Reloj en Cream Puff y no lances a Wind hasta el seg 25.250 (esta parte depende mucho de tus Bonds de Amp Buff).",
+    "Reloj en Bunny después de Wind → Reloj en BBP y lanzas a Ferret en el 18.688. A partir de aquí es spam; lo único importante es que Wind se lance entre el seg 7.750 – 7.625."
+  ],
+  "credit": {
+    "author": "Camera04",
+    "contacts": [
+      {
+        "label": "Facebook",
+        "value": "@Byron Ramirez"
+      },
+      {
+        "label": "Discord",
+        "value": "@Camera04_"
+      }
+    ],
+    "note": "¿Buscas gremio? Escríbeme al MD — buscamos jugadores activos en DC y HB Server."
+  }
+}

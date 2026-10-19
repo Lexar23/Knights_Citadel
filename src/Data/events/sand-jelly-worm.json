@@ -1,0 +1,120 @@
+{
+  "id": "sand-jelly-worm",
+  "name": "Sand Jelly Worm",
+  "siglas": "SJW",
+  "category": "Desert Raid",
+  "url": "/eventos/sand-jelly-worm",
+  "img": "/Assets/events/SandJellyworm/SandJelly_Worm.webp",
+  "background": "/Assets/backgrounds/pageBackgrounds/Event.webp",
+  "element": "Fuego",
+  "treasures": ["red", "pergamino", "reloj"],
+  "team": [
+    {
+      "cookieId": "NT",
+      "focus": "Daño de Monstruos",
+      "builds": [
+        {
+          "biscuit": "4 Daño Fuego",
+          "setLabel": "X6",
+          "toppings": [{ "type": "raspberry", "count": 5 }],
+          "stats": [
+            { "label": "CD", "value": "7%", "key": true },
+            { "label": "ATK SPD", "value": "5%", "key": true },
+            { "label": "ATK & Crit", "value": "Máx." }
+          ]
+        }
+      ]
+    },
+    {
+      "cookieId": "MS",
+      "focus": "Daño Aum. a Aliados",
+      "builds": [
+        {
+          "biscuit": "4 CD",
+          "setLabel": "X5/1",
+          "toppings": [
+            { "type": "peanut", "count": 4 },
+            { "type": "chocolate", "count": 1 }
+          ],
+          "stats": [
+            { "label": "HP", "value": "100%", "key": true },
+            { "label": "CD", "value": "35%", "key": true },
+            { "label": "ATK & Crit", "value": "Máx." }
+          ]
+        }
+      ]
+    },
+    {
+      "cookieId": "LZ",
+      "focus": "Daño a Monstruos",
+      "builds": [
+        {
+          "biscuit": "4 Vel. Ataque",
+          "setLabel": "X4/2",
+          "toppings": [
+            { "type": "chocolate", "count": 3 },
+            { "type": "caramel", "count": 2 }
+          ],
+          "stats": [
+            { "label": "CD", "value": "17.9%", "key": true },
+            { "label": "ATK SPD", "value": "Máx.", "note": "en sub-stats (+78%)", "key": true }
+          ]
+        }
+      ]
+    },
+    {
+      "cookieId": "RJ",
+      "focus": "Daño a Monstruos",
+      "builds": [
+        {
+          "biscuit": "4 Daño Fuego",
+          "setLabel": "X4/2",
+          "toppings": [
+            { "type": "raspberry", "count": 3 },
+            { "type": "chocolate", "count": 2 }
+          ],
+          "stats": [
+            { "label": "CD", "value": "19 – 19.5%", "key": true },
+            { "label": "ATK", "value": "Máx.", "note": "en sub-stats" }
+          ]
+        }
+      ]
+    },
+    {
+      "cookieId": "FS",
+      "focus": "Daño a Monstruos",
+      "builds": [
+        {
+          "biscuit": "4 Daño Fuego",
+          "setLabel": "X6",
+          "toppings": [{ "type": "raspberry", "count": 5 }],
+          "stats": [
+            { "label": "CD", "value": "9%", "key": true },
+            { "label": "ATK & Crit", "value": "Máx." }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Debes tener 2 tartas con Daño a Monstruos de Frambuesa; ambas tartas son igual de importantes (en caso de no tener 2, puedes llevar a FS con tarta de CD, pero el daño se reducirá).",
+    "El Magic Candy de Mala Sauce debe estar al +30 (puede estar al +1, pero en medio de esto no vale la pena, ya que los buffos buenos están en el +30).",
+    "El Crystal Jam de Fire Spirit debe estar al menos al 15 para que funcione.",
+    "Mientras más ascensiones de FS, más daño harás (gracias al CJ).",
+    "Las estrellas de Rajapendra aumentan el daño.",
+    "El HP de Mala Sauce debe ser mayor al de Rajapendra o Fire Spirit; si no, el jefe se comerá a Rajapendra perdiendo daño."
+  ],
+  "timing": [
+    "Al inicio de la batalla debes spamear a todos → cast Nutmeg, Fire Spirit, Rajapendra & Linzer → por último Mala Sauce.",
+    "Intenta no atrasarte con las habilidades de nadie, y menos con Linzer.",
+    "Solo lanza a Linzer cuando tenga las 7 cargas."
+  ],
+  "credit": {
+    "author": "Camera04",
+    "contacts": [
+      { "label": "Facebook", "value": "@Byron Ramirez" },
+      { "label": "Discord", "value": "@Camera04_" }
+    ],
+    "note": "¿Buscas gremio? Escríbeme al MD — buscamos jugadores activos en DC Server."
+  }
+}

@@ -1,0 +1,362 @@
+{
+  "id": "red-velvet",
+  "name": "Red Velvet Dragon",
+  "siglas": "RVD",
+  "url": "/jefes/red-velvet",
+  "img": "/Assets/enemies/DRV.webp",
+  "listImg": "/Assets/enemies/silhouette/DRV.webp",
+  "background": "/Assets/backgrounds/bossBackgrounds/DRV_bg.webp",
+  "element": "Veneno",
+  "treasures": [
+    "red",
+    "pergamino",
+    "reloj"
+  ],
+  "treasureNote": "Silbato Carmesí – Pergamino – Reloj Azul o Común",
+  "team": [
+    {
+      "cookieId": "PD",
+      "builds": [
+        {
+          "name": "Tarta ATK",
+          "biscuit": "4 Daño Veneno",
+          "tart": "raspberry",
+          "toppings": [
+            {
+              "type": "apple",
+              "count": 5
+            }
+          ],
+          "stats": [
+            {
+              "label": "CD",
+              "value": "8 – 9.2%",
+              "key": true
+            },
+            {
+              "label": "Crit",
+              "value": "Máx.",
+              "key": true
+            },
+            {
+              "label": "ATK",
+              "value": "Máx."
+            }
+          ]
+        },
+        {
+          "name": "Tarta Crit",
+          "biscuit": "4 Daño Veneno",
+          "tart": "apple",
+          "toppings": [
+            {
+              "type": "apple",
+              "count": 4
+            },
+            {
+              "type": "raspberry",
+              "count": 1
+            }
+          ],
+          "stats": [
+            {
+              "label": "CD",
+              "value": "8 – 9.2%",
+              "key": true
+            },
+            {
+              "label": "Crit",
+              "value": "Máx.",
+              "key": true
+            },
+            {
+              "label": "ATK",
+              "value": "Máx."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cookieId": "SM",
+      "notes": [
+        "La segunda build solo funciona si tiene al menos 4 estrellas."
+      ],
+      "builds": [
+        {
+          "name": "Build 1",
+          "biscuit": "4 CD (22.5 – 23% CD)",
+          "tart": "apple",
+          "toppings": [
+            {
+              "type": "apple",
+              "count": 5
+            }
+          ],
+          "stats": [
+            {
+              "label": "CD",
+              "value": "32.2%",
+              "key": true
+            },
+            {
+              "label": "Crit",
+              "value": "72%",
+              "note": "69% sin Bonds de Crit",
+              "key": true
+            },
+            {
+              "label": "ATK",
+              "value": "Máx.",
+              "note": "en sub-stats"
+            }
+          ]
+        },
+        {
+          "name": "Build 2",
+          "biscuit": "4 CD (22.5 – 23% CD)",
+          "tart": "apple",
+          "toppings": [
+            {
+              "type": "apple",
+              "count": 4
+            },
+            {
+              "type": "raspberry",
+              "count": 1
+            }
+          ],
+          "stats": [
+            {
+              "label": "CD",
+              "value": "32.2%",
+              "key": true
+            },
+            {
+              "label": "Crit",
+              "value": "+66%",
+              "key": true
+            },
+            {
+              "label": "ATK",
+              "value": "Máx."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cookieId": "PJ",
+      "builds": [
+        {
+          "name": "Build 1",
+          "biscuit": "2 Daño Veneno / 2 CD",
+          "tart": "chocolate",
+          "toppings": [
+            {
+              "type": "apple",
+              "count": 3
+            },
+            {
+              "type": "chocolate",
+              "count": 2
+            }
+          ],
+          "stats": [
+            {
+              "label": "CD",
+              "value": "35.1%",
+              "note": "más es inútil",
+              "key": true
+            },
+            {
+              "label": "ATK SPD",
+              "value": "9.5 – 14.3%",
+              "key": true
+            },
+            {
+              "label": "Crit",
+              "value": "Prioridad",
+              "note": "enfócate en Crit",
+              "key": true
+            }
+          ]
+        },
+        {
+          "name": "Build 2",
+          "biscuit": "Beascuit Daño Veneno Contaminado / 3 CD",
+          "tart": "chocolate",
+          "toppings": [
+            {
+              "type": "apple",
+              "count": 4
+            },
+            {
+              "type": "chocolate",
+              "count": 1
+            }
+          ],
+          "stats": [
+            {
+              "label": "CD",
+              "value": "35.1%",
+              "note": "más es inútil",
+              "key": true
+            },
+            {
+              "label": "ATK SPD",
+              "value": "9.5 – 14.3%",
+              "key": true
+            },
+            {
+              "label": "Crit",
+              "value": "Prioridad",
+              "note": "tope de 54% Crit",
+              "key": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cookieId": "BS",
+      "notes": [
+        "Ambas builds funcionan, usa la que tenga menos subs muertas."
+      ],
+      "builds": [
+        {
+          "name": "Build 1",
+          "biscuit": "4 Daño Veneno",
+          "tart": "apple",
+          "toppings": [
+            {
+              "type": "apple",
+              "count": 4
+            },
+            {
+              "type": "raspberry",
+              "count": 1
+            }
+          ],
+          "stats": [
+            {
+              "label": "CD",
+              "value": "8.4 – 8.7%",
+              "key": true
+            },
+            {
+              "label": "Crit",
+              "value": "66%",
+              "key": true
+            },
+            {
+              "label": "ATK",
+              "value": "Máx.",
+              "note": "+50% se considera bueno",
+              "key": true
+            }
+          ]
+        },
+        {
+          "name": "Build 2",
+          "biscuit": "4 Daño Veneno",
+          "tart": "raspberry",
+          "toppings": [
+            {
+              "type": "apple",
+              "count": 5
+            }
+          ],
+          "stats": [
+            {
+              "label": "CD",
+              "value": "8.4 – 8.7%",
+              "key": true
+            },
+            {
+              "label": "Crit",
+              "value": "65%",
+              "key": true
+            },
+            {
+              "label": "ATK",
+              "value": "Máx.",
+              "note": "+55%",
+              "key": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cookieId": "CA",
+      "builds": [
+        {
+          "name": "Build 1",
+          "biscuit": "4 Vel. Ataque",
+          "tart": "almond",
+          "toppings": [
+            {
+              "type": "apple",
+              "count": 3
+            },
+            {
+              "type": "almond",
+              "count": 2
+            }
+          ],
+          "stats": [
+            {
+              "label": "DMR",
+              "value": "51.5 – 53%"
+            },
+            {
+              "label": "CD",
+              "value": "8.4 – 8.7%",
+              "note": "8.3% queda cerca del corte"
+            },
+            {
+              "label": "ATK SPD",
+              "value": "42.3 – 51.1%"
+            },
+            {
+              "label": "Crit",
+              "value": "Máx."
+            }
+          ]
+        },
+        {
+          "name": "Build 2",
+          "biscuit": "1 CD / 3 DMR",
+          "tart": "almond",
+          "toppings": [
+            {
+              "type": "apple",
+              "count": 5
+            }
+          ],
+          "stats": [
+            {
+              "label": "CD",
+              "value": "13 – 15%",
+              "key": true
+            },
+            {
+              "label": "DMR",
+              "value": "45 – 50%",
+              "key": true
+            },
+            {
+              "label": "Crit",
+              "value": "Máx."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Tesoros: Silbato Carmesí, Pergamino y Reloj (Azul o Común)."
+  ],
+  "timing": []
+}

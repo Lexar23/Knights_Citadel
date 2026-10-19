@@ -1,0 +1,210 @@
+{
+  "id": "machine-god-of-the-eternal-void",
+  "name": "Machine-God of the Eternal Void",
+  "siglas": "MGEV",
+  "url": "/jefes/machine-god-of-the-eternal-void",
+  "img": "/Assets/enemies/MGV2.webp",
+  "listImg": "/Assets/enemies/silhouette/MGV.webp",
+  "background": "/Assets/backgrounds/pageBackgrounds/Bosses.webp",
+  "element": "Agua",
+  "treasures": [
+    "red",
+    "pergamino",
+    "reloj"
+  ],
+  "team": [
+    {
+      "cookieId": "FJ",
+      "focus": "Daño de Aliados",
+      "builds": [
+        {
+          "biscuit": "4 Daño Agua",
+          "setLabel": "X6",
+          "toppings": [
+            {
+              "type": "chocolate",
+              "count": 5
+            }
+          ],
+          "stats": [
+            {
+              "label": "CD",
+              "value": "35%",
+              "key": true
+            },
+            {
+              "label": "ATK",
+              "value": "Máx."
+            },
+            {
+              "label": "ATK SPD",
+              "value": "Máx."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cookieId": "SF",
+      "focus": "Daño a Monstruos",
+      "builds": [
+        {
+          "biscuit": "4 Daño Agua",
+          "setLabel": "X6",
+          "toppings": [
+            {
+              "type": "chocolate",
+              "count": 5
+            }
+          ],
+          "stats": [
+            {
+              "label": "CD",
+              "value": "34.8 – 35%",
+              "key": true
+            },
+            {
+              "label": "ATK",
+              "value": "Máx.",
+              "note": "en sub-stats"
+            },
+            {
+              "label": "ATK SPD",
+              "value": "Máx."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cookieId": "SE",
+      "focus": "Daño a Monstruos",
+      "builds": [
+        {
+          "biscuit": "4 Daño Agua",
+          "setLabel": "X3/3",
+          "toppings": [
+            {
+              "type": "chocolate",
+              "count": 2
+            },
+            {
+              "type": "raspberry",
+              "count": 3
+            }
+          ],
+          "stats": [
+            {
+              "label": "CD",
+              "value": "24.2 – 24.4%",
+              "key": true
+            },
+            {
+              "label": "ATK",
+              "value": "Máx.",
+              "note": "en sub-stats"
+            },
+            {
+              "label": "ATK SPD",
+              "value": "No",
+              "note": "sin ATK SPD"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cookieId": "ME",
+      "focus": "Daño a Monstruos",
+      "builds": [
+        {
+          "biscuit": "4 Daño Agua",
+          "setLabel": "X4/2",
+          "toppings": [
+            {
+              "type": "raspberry",
+              "count": 3
+            },
+            {
+              "type": "chocolate",
+              "count": 2
+            }
+          ],
+          "stats": [
+            {
+              "label": "CD",
+              "value": "19.2 – 19.4%",
+              "key": true
+            },
+            {
+              "label": "ATK SPD",
+              "value": "+11.6%",
+              "key": true
+            },
+            {
+              "label": "ATK",
+              "value": "Máx.",
+              "note": "en sub-stats"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cookieId": "CF",
+      "focus": "Daño a Monstruos",
+      "builds": [
+        {
+          "biscuit": "4 CD",
+          "setLabel": "X4/2",
+          "toppings": [
+            {
+              "type": "raspberry",
+              "count": 3
+            },
+            {
+              "type": "chocolate",
+              "count": 2
+            }
+          ],
+          "stats": [
+            {
+              "label": "CD",
+              "value": "35 – 40%",
+              "key": true
+            },
+            {
+              "label": "ATK & Crit",
+              "value": "Máx."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "No priorices las subs de ATK en ninguno; prioriza primero el CD o ATK SPD para que los timings funcionen.",
+    "Antes de usar el equipo prioriza mejorar el Magic Candy de Jellyfish al 30 y el de Sea Fairy al menos al 10 – 20.",
+    "Prioriza las estrellas de Menthol, ya que estas son las que más daño aumentan.",
+    "Prioriza el Daño Agua en este orden: Menthol > Sea Fairy > Seltzer > Jellyfish."
+  ],
+  "timing": [
+    "Desde el pasillo deja el Reloj en Ferret → cuando Ferret se lance, Reloj en Sea Fairy → justo cuando se lance Sea Fairy, spam a Seltzer para poder lanzarla antes del anuncio del jefe (si no la logras lanzar no perderás daño, pero puede que se atrase un poco).",
+    "Desactiva el automático o deja el Reloj en Ferret → lanzas a Jellyfish en el seg 59.188 – 59.125 → después de lanzar a Jellyfish lanzas a Menthol entre el 58.500 – 58.313 → después de esto es spam por el resto de la partida; solo intenta que Menthol no se atrase en ningún momento.",
+    "Lo más importante del timing es que Menthol logre lanzarse entre el 3.000 – 2.688. Si se lanza después puedes perder mucho daño."
+  ],
+  "credit": {
+    "author": "Camera04",
+    "contacts": [
+      {
+        "label": "Facebook",
+        "value": "@Byron Ramirez"
+      },
+      {
+        "label": "Discord",
+        "value": "@Camera04_"
+      }
+    ],
+    "note": "¿Buscas gremio? Escríbeme al MD — buscamos jugadores activos en DC Server."
+  }
+}

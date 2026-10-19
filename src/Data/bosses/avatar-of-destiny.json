@@ -1,0 +1,210 @@
+{
+  "id": "avatar-of-destiny",
+  "name": "Avatar of Destiny",
+  "siglas": "AOD",
+  "url": "/jefes/avatar-of-destiny",
+  "img": "/Assets/enemies/AOD.webp",
+  "listImg": "/Assets/enemies/silhouette/AOD.webp",
+  "background": "/Assets/backgrounds/bossBackgrounds/AOD_bg.webp",
+  "treasures": [
+    "silbato",
+    "pergamino",
+    "speed"
+  ],
+  "team": [
+    {
+      "cookieId": "AMP",
+      "focus": "Daño a Monstruos",
+      "builds": [
+        {
+          "biscuit": "4 Vel. Ataque",
+          "setLabel": "X4/2",
+          "toppings": [
+            {
+              "type": "caramel",
+              "count": 3
+            },
+            {
+              "type": "apple",
+              "count": 2
+            }
+          ],
+          "stats": [
+            {
+              "label": "ATK SPD",
+              "value": "79.5%",
+              "key": true
+            },
+            {
+              "label": "Crit",
+              "value": "24.5%",
+              "note": "21.5% con Bonds"
+            },
+            {
+              "label": "Amp Buff",
+              "value": "Máx."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cookieId": "MC",
+      "focus": "Daño de Aliados",
+      "builds": [
+        {
+          "biscuit": "4 CD",
+          "setLabel": "X6",
+          "toppings": [
+            {
+              "type": "chocolate",
+              "count": 5
+            }
+          ],
+          "stats": [
+            {
+              "label": "CD",
+              "value": "57.7 – 59.9%",
+              "key": true
+            },
+            {
+              "label": "ATK SPD",
+              "value": "10.5%",
+              "note": "14% máx."
+            },
+            {
+              "label": "Debuff Resist",
+              "value": "Máx."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cookieId": "CB",
+      "focus": "Daño a Monstruos",
+      "builds": [
+        {
+          "biscuit": "4 Vel. Ataque",
+          "setLabel": "X3/3",
+          "toppings": [
+            {
+              "type": "caramel",
+              "count": 2
+            },
+            {
+              "type": "raspberry",
+              "count": 3
+            }
+          ],
+          "stats": [
+            {
+              "label": "ATK SPD",
+              "value": "74.5%",
+              "key": true
+            },
+            {
+              "label": "CD",
+              "value": "7.7%",
+              "note": "8.3% máx."
+            },
+            {
+              "label": "ATK",
+              "value": "Máx.",
+              "note": "75% es bueno"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cookieId": "CF",
+      "focus": "Daño a Monstruos",
+      "builds": [
+        {
+          "biscuit": "4 CD",
+          "setLabel": "X3/3",
+          "toppings": [
+            {
+              "type": "raspberry",
+              "count": 2
+            },
+            {
+              "type": "chocolate",
+              "count": 3
+            }
+          ],
+          "stats": [
+            {
+              "label": "CD",
+              "value": "35 – 43%",
+              "key": true
+            },
+            {
+              "label": "ATK & Crit",
+              "value": "Máx."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cookieId": "SC",
+      "focus": "Daño a Monstruos",
+      "builds": [
+        {
+          "biscuit": "4 CD",
+          "setLabel": "X2/4",
+          "toppings": [
+            {
+              "type": "raspberry",
+              "count": 1
+            },
+            {
+              "type": "chocolate",
+              "count": 4
+            }
+          ],
+          "stats": [
+            {
+              "label": "CD",
+              "value": "49.5%",
+              "key": true
+            },
+            {
+              "label": "ATK & Crit",
+              "value": "Máx."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Prioridad al ATK de Crème Brûlée, ya que este representa el 65% del daño.",
+    "Para Mint no es tan necesario llegar al 59.9%, pero sí es necesario llegar al 57.7% para más daño.",
+    "La tarta con más prioridad es la Tarta de Mint con Daño Aumentado a Aliados.",
+    "No mejores el Magic Candy de Mint Choco, déjalo al lvl 1.",
+    "No hay un mínimo de Amp Buff en Pudding, consigue todo el que puedas."
+  ],
+  "timing": [
+    "Desde el pasillo deja el Reloj en Star Coral → Reloj en Cream Ferret → Reloj en Pudding → lanzas a Mint Choco (dependiendo del CD que tenga) → (inmediatamente después de que se tire Pudding) Reloj en Crème Brûlée.",
+    "Spam de todos, solamente debes tirar a Mint Choco después del primer silencio.",
+    "El spam sigue igual, solo atrasa un poco a Pudding y lánzala en el 33.250.",
+    "Otra vez spam hasta el 7.000, donde deberás atrasar a Pudding otra vez hasta el segundo 2.563."
+  ],
+  "credit": {
+    "author": "Camera04",
+    "contacts": [
+      {
+        "label": "Facebook",
+        "value": "@Byron Ramirez"
+      },
+      {
+        "label": "Discord",
+        "value": "@Camera04_"
+      }
+    ],
+    "note": "¿Buscas gremio? Escríbeme al MD — buscamos jugadores activos en DC Server."
+  }
+}

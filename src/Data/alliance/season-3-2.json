@@ -1,0 +1,204 @@
+{
+  "id": "season-3-2",
+  "name": "Season 3-2",
+  "category": "Cookie Alliance",
+  "current": true,
+  "background": "/Assets/backgrounds/pageBackgrounds/Alliance.webp",
+  "teams": [
+    {
+      "name": "Primer Equipo",
+      "treasures": ["red", "pergamino", "reloj"],
+      "team": [
+        {
+          "cookieId": "BSP",
+          "focus": "Daño de Monstruos",
+          "builds": [
+            {
+              "biscuit": "4 Daño Fuego",
+              "setLabel": "X6",
+              "toppings": [{ "type": "raspberry", "count": 5 }],
+              "stats": [
+                { "label": "DMR", "value": "25%", "key": true },
+                { "label": "CD", "value": "8%", "key": true },
+                { "label": "ATK SPD", "value": "12%" },
+                { "label": "ATK", "value": "Máx." }
+              ]
+            }
+          ]
+        },
+        {
+          "cookieId": "MS",
+          "focus": "Daño a Monstruos",
+          "builds": [
+            {
+              "biscuit": "4 CD",
+              "setLabel": "X4/2",
+              "toppings": [
+                { "type": "raspberry", "count": 3 },
+                { "type": "chocolate", "count": 2 }
+              ],
+              "stats": [
+                { "label": "CD", "value": "35%", "key": true },
+                { "label": "DMR", "value": "25%", "key": true }
+              ]
+            }
+          ]
+        },
+        {
+          "cookieId": "NT",
+          "focus": "Daño a Monstruos",
+          "builds": [
+            {
+              "biscuit": "4 CD",
+              "setLabel": "X6",
+              "toppings": [{ "type": "raspberry", "count": 5 }],
+              "stats": [
+                { "label": "CD", "value": "35%", "key": true },
+                { "label": "ATK", "value": "Máx.", "note": "en sub-stats" },
+                { "label": "DMR", "value": "25%", "note": "si tiene poca promoción" }
+              ]
+            }
+          ]
+        },
+        {
+          "cookieId": "FS",
+          "focus": "Daño a Monstruos",
+          "notes": ["Crystal Jam +15."],
+          "builds": [
+            {
+              "biscuit": "4 Daño Fuego",
+              "setLabel": "X6",
+              "toppings": [{ "type": "raspberry", "count": 5 }],
+              "stats": [
+                { "label": "CD", "value": "8%", "key": true },
+                { "label": "ATK SPD", "value": "5%", "key": true },
+                { "label": "ATK", "value": "Máx." },
+                { "label": "Crit", "value": "Máx.", "note": "en sub-stats" }
+              ]
+            }
+          ]
+        },
+        {
+          "cookieId": "SS",
+          "focus": "Fuegos Artificiales",
+          "builds": [
+            {
+              "biscuit": "4 CD",
+              "setLabel": "X6",
+              "toppings": [{ "type": "raspberry", "count": 5 }],
+              "stats": [
+                { "label": "CD", "value": "35%", "key": true },
+                { "label": "DMR & ATK", "value": "Máx." }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Segundo Equipo",
+      "treasures": ["red", "pergamino", "reloj"],
+      "team": [
+        {
+          "cookieId": "AD",
+          "focus": "Daño de Monstruos",
+          "builds": [
+            {
+              "biscuit": "4 Daño Tierra",
+              "setLabel": "X6",
+              "toppings": [{ "type": "raspberry", "count": 5 }],
+              "stats": [
+                { "label": "CD", "value": "8%", "key": true },
+                { "label": "ATK", "value": "Máx." }
+              ]
+            }
+          ]
+        },
+        {
+          "cookieId": "DE",
+          "focus": "Daño a Monstruos",
+          "builds": [
+            {
+              "biscuit": "4 Daño Caos",
+              "setLabel": "X4/2",
+              "toppings": [
+                { "type": "raspberry", "count": 3 },
+                { "type": "chocolate", "count": 2 }
+              ],
+              "stats": [
+                { "label": "CD", "value": "14%", "key": true },
+                { "label": "ATK", "value": "Máx." }
+              ]
+            }
+          ]
+        },
+        {
+          "cookieId": "PD",
+          "focus": "Daño a Monstruos",
+          "builds": [
+            {
+              "biscuit": "4 Daño Veneno",
+              "setLabel": "X4/2",
+              "toppings": [
+                { "type": "apple", "count": 3 },
+                { "type": "chocolate", "count": 2 }
+              ],
+              "stats": [
+                { "label": "CD", "value": "22%", "key": true },
+                { "label": "ATK", "value": "Máx.", "note": "en sub-stats" }
+              ]
+            }
+          ]
+        },
+        {
+          "cookieId": "TK",
+          "focus": "Daño a Monstruos",
+          "builds": [
+            {
+              "biscuit": "4 Daño Luz",
+              "setLabel": "X6",
+              "toppings": [{ "type": "raspberry", "count": 5 }],
+              "stats": [
+                { "label": "CD", "value": "8%", "key": true },
+                { "label": "ATK", "value": "Máx." },
+                { "label": "Crit", "value": "Máx.", "note": "en sub-stats" }
+              ]
+            }
+          ]
+        },
+        {
+          "cookieId": "LT",
+          "focus": "Fuegos Artificiales",
+          "builds": [
+            {
+              "biscuit": "4 CD",
+              "setLabel": "X6",
+              "toppings": [{ "type": "raspberry", "count": 5 }],
+              "stats": [
+                { "label": "DMR", "value": "75%", "key": true },
+                { "label": "CD", "value": "22%", "key": true },
+                { "label": "ATK", "value": "Máx." }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Efecto recomendado en la guía: −15% del daño recibido.",
+    "Nivel mínimo indicado en la guía: 10."
+  ],
+  "timing": [
+    "Para el Primer Equipo no hay un timing específico, es spam sin problema.",
+    "Opcional: si pones a Mago en el segundo equipo, cuando acabes con el primer jefe pon a Mago solo y deja que el jefe acabe con él (debe usar su habilidad 2 veces); luego regresas al primer equipo.",
+    "Con el Segundo Equipo debes seguir un timing sencillo → Reloj en Pompom y luego cast a Litmus siempre, y spam del resto. Es para poder mantener stuneado al jefe todo el rato."
+  ],
+  "credit": {
+    "author": "Camera04",
+    "contacts": [
+      { "label": "Facebook", "value": "@Byron Ramirez" },
+      { "label": "Discord", "value": "@Camera04_" }
+    ]
+  }
+}
