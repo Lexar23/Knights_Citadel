@@ -25,7 +25,7 @@ export default function AllianceTeamCard({ team }: AllianceTeamCardProps) {
           {team.suggestedCookies?.map((cookie, idx) => (
             <li
               key={idx}
-              className="grid grid-cols-[3ch_1fr] items-center gap-2 rounded-[8px] border border-pine-15 bg-carbon-veil/60 px-3 py-2.5"
+              className="grid grid-cols-[3ch_1fr] items-center gap-2 rounded-[14px] border border-pine-15 bg-carbon-veil/60 px-3 py-2.5"
             >
               <span className="font-mono text-[12px] text-sage-40">S{idx + 1}</span>
               <span className="text-[14px] text-moss-80">{cookie}</span>
@@ -51,7 +51,7 @@ export default function AllianceTeamCard({ team }: AllianceTeamCardProps) {
 
       {/* Notas / Recomendaciones */}
       {team.notes && team.notes.length > 0 && (
-        <div className="mt-auto rounded-[8px] border border-phosphor-blue-black p-4">
+        <div className="mt-auto rounded-[14px] border border-phosphor-blue-black p-4">
           <span className="eyebrow mb-2 block">Consejos de desempeño</span>
           <ul className="flex flex-col gap-1.5 text-[14px] text-sage-60">
             {team.notes.map((note, idx) => (

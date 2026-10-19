@@ -49,7 +49,7 @@ function Portrait({ cookieId, src, sizes }: { cookieId: string; src?: string; si
   );
 }
 
-const cell = "rounded-[8px] border border-pine-15 bg-ground-iron";
+const cell = "candy-cell";
 
 export default function BossBento({ boss, titleAs: Title = "h1", images = {} }: BossBentoProps) {
   const [selected, setSelected] = useState(0);
@@ -71,7 +71,7 @@ export default function BossBento({ boss, titleAs: Title = "h1", images = {} }: 
       {/* 0 · Imagen del jefe */}
       <div className={`bento-boss relative min-h-[300px] overflow-hidden ${cell}`}>
         <Image src={boss.background} alt="" fill priority sizes="(max-width: 1024px) 100vw, 520px" className={`object-cover grayscale-[40%] ${boss.img ? "opacity-35" : "opacity-60"}`} />
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-void-black via-void-black/50 to-transparent" />
         {boss.img ? (
           <div className="absolute inset-6 bottom-20">
             <Image src={boss.img} alt={boss.name} fill priority sizes="(max-width: 1024px) 80vw, 480px" className="object-contain" />
@@ -123,8 +123,10 @@ export default function BossBento({ boss, titleAs: Title = "h1", images = {} }: 
             onClick={() => selectCookie(i)}
             aria-pressed={active}
             aria-label={c.name}
-            className={`bento-c bento-c${i + 1} group relative aspect-square cursor-pointer overflow-hidden rounded-[8px] border lg:aspect-auto ${
-              active ? "border-phosphor-white bg-carbon-veil" : "border-pine-15 bg-ground-iron hover:border-circuit-border"
+            className={`bento-c bento-c${i + 1} group relative aspect-square cursor-pointer overflow-hidden rounded-[16px] border-2 lg:aspect-auto ${
+              active
+                ? "border-lime-pulse bg-carbon-veil shadow-[0_0_0_3px_rgba(255,204,77,0.28),0_4px_0_#0f0b29]"
+                : "border-pine-15 bg-ground-iron shadow-[0_4px_0_#0f0b29] hover:border-circuit-border"
             }`}
           >
             <Portrait cookieId={m.cookieId} src={pickTileImage(images[m.cookieId])} sizes="112px" />
@@ -231,7 +233,7 @@ export default function BossBento({ boss, titleAs: Title = "h1", images = {} }: 
                 aria-pressed={i === buildIdx}
                 className={`cursor-pointer rounded-full border px-4 py-1.5 text-[14px] ${
                   i === buildIdx
-                    ? "border-phosphor-white bg-phosphor-white text-ground-iron"
+                    ? "border-[#8a4f14] bg-lime-pulse text-cookie-dark shadow-[0_3px_0_#8a4f14]"
                     : "border-circuit-border text-fern-link hover:text-phosphor-white"
                 }`}
               >

@@ -22,7 +22,7 @@ export default function CookieAvatar({ cookieId, size = 72, className = "" }: Co
 
   return (
     <div
-      className={`relative shrink-0 overflow-hidden rounded-[8px] border border-pine-15 bg-carbon-veil ${className}`}
+      className={`relative shrink-0 overflow-hidden rounded-[14px] border border-pine-15 bg-carbon-veil ${className}`}
       style={{ width: size, height: size }}
     >
       {src ? (

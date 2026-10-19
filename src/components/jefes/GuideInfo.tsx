@@ -32,7 +32,7 @@ export default function GuideInfo({ notes, timing, timingTitle, credit }: GuideI
         )}
 
         {credit && (
-          <div className="mt-6 rounded-[8px] border border-phosphor-blue-black p-4">
+          <div className="mt-6 rounded-[14px] border border-phosphor-blue-black p-4">
             <p className="eyebrow">Créditos de la guía</p>
             <p className="mt-1 font-cookie text-[18px] text-phosphor-white">{credit.author}</p>
             {credit.note && <p className="mt-1 text-[14px] text-sage-60">{credit.note}</p>}

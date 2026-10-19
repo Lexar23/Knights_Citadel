@@ -69,7 +69,7 @@ export default async function GremioDetailPage({ params }: GremioDetailPageProps
             <h2 className="mt-3 text-heading md:text-heading-lg">{gremio.name}</h2>
             {gremio.slogan && <p className="mt-1 text-[16px] italic text-moss-80">&quot;{gremio.slogan}&quot;</p>}
           </div>
-          <div className="self-start rounded-[8px] border border-pine-15 bg-ground-iron/85 px-5 py-3 md:self-auto">
+          <div className="self-start rounded-[14px] border border-pine-15 bg-ground-iron/85 px-5 py-3 md:self-auto">
             <span className="eyebrow block">Miembros</span>
             <span className="font-mono text-[20px] text-phosphor-white">
               {gremio.membersCount} / {gremio.maxMembers}

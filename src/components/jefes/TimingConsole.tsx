@@ -32,11 +32,11 @@ function highlight(text: string) {
 /** Ventana de "terminal" para los timings de la partida. */
 export default function TimingConsole({ title, steps }: TimingConsoleProps) {
   return (
-    <div className="overflow-hidden rounded-[12px] border border-circuit-border bg-ground-iron">
+    <div className="overflow-hidden rounded-[18px] border-2 border-pine-15 bg-ground-iron shadow-[0_4px_0_#0f0b29]">
       <div className="flex items-center gap-2 border-b border-phosphor-blue-black bg-carbon-veil px-4 py-3">
-        <span className="h-2 w-2 rounded-full bg-[#5a3a36]" />
-        <span className="h-2 w-2 rounded-full bg-[#5a5536]" />
-        <span className="h-2 w-2 rounded-full bg-[#3e5a36]" />
+        <span className="h-2 w-2 rounded-full bg-candy-pink" />
+        <span className="h-2 w-2 rounded-full bg-lime-pulse" />
+        <span className="h-2 w-2 rounded-full bg-candy-blue" />
         <span className="ml-auto text-[12px] font-medium text-moss-70">{title}</span>
       </div>
       <ol className="flex flex-col gap-4 p-6 font-mono text-[14px] leading-[1.6] text-mint-frost/85">

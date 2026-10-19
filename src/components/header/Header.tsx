@@ -19,7 +19,7 @@ export default function Navbar() {
     pathname === href || (href !== "/" && pathname.startsWith(href));
 
   return (
-    <nav className="sticky top-0 z-50 w-full border-b border-phosphor-blue-black bg-carbon-veil/85 backdrop-blur-[10px] shadow-nav">
+    <nav className="sticky top-0 z-50 w-full border-b-2 border-pine-15 bg-[#241b55]/90 backdrop-blur-[10px] shadow-nav">
       <div className="mx-auto max-w-[1280px] px-4 md:px-6">
         {/* Header */}
         <div className="flex h-16 items-center justify-between">
@@ -65,7 +65,7 @@ export default function Navbar() {
           <button
             type="button"
             onClick={() => setIsOpen((prev) => !prev)}
-            className="relative z-50 inline-flex h-11 w-11 cursor-pointer items-center justify-center rounded-[12px] border border-pine-15 text-phosphor-white hover:border-circuit-border touch-manipulation md:hidden"
+            className="relative z-50 inline-flex h-11 w-11 cursor-pointer items-center justify-center rounded-[18px] border border-pine-15 text-phosphor-white hover:border-circuit-border touch-manipulation md:hidden"
             aria-controls="navbar-menu"
             aria-expanded={isOpen}
             aria-label={isOpen ? "Cerrar menú principal" : "Abrir menú principal"}
@@ -97,7 +97,7 @@ export default function Navbar() {
                   <Link
                     href={item.href}
                     onClick={closeMenu}
-                    className={`flex items-center gap-3 rounded-[8px] px-3 py-3 ${
+                    className={`flex items-center gap-3 rounded-[14px] px-3 py-3 ${
                       active ? "bg-ground-iron text-phosphor-white" : "text-fern-link hover:text-phosphor-white"
                     }`}
                     aria-current={active ? "page" : undefined}
