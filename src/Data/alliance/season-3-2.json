@@ -15,7 +15,7 @@
           "builds": [
             {
               "biscuit": "4 Daño Fuego",
-              "setLabel": "X6",
+              "tart": "raspberry",
               "toppings": [{ "type": "raspberry", "count": 5 }],
               "stats": [
                 { "label": "DMR", "value": "25%", "key": true },
@@ -32,7 +32,7 @@
           "builds": [
             {
               "biscuit": "4 CD",
-              "setLabel": "X4/2",
+              "tart": "raspberry",
               "toppings": [
                 { "type": "raspberry", "count": 3 },
                 { "type": "chocolate", "count": 2 }
@@ -50,7 +50,7 @@
           "builds": [
             {
               "biscuit": "4 CD",
-              "setLabel": "X6",
+              "tart": "raspberry",
               "toppings": [{ "type": "raspberry", "count": 5 }],
               "stats": [
                 { "label": "CD", "value": "35%", "key": true },
@@ -67,7 +67,7 @@
           "builds": [
             {
               "biscuit": "4 Daño Fuego",
-              "setLabel": "X6",
+              "tart": "raspberry",
               "toppings": [{ "type": "raspberry", "count": 5 }],
               "stats": [
                 { "label": "CD", "value": "8%", "key": true },
@@ -84,7 +84,7 @@
           "builds": [
             {
               "biscuit": "4 CD",
-              "setLabel": "X6",
+              "tart": "raspberry",
               "toppings": [{ "type": "raspberry", "count": 5 }],
               "stats": [
                 { "label": "CD", "value": "35%", "key": true },
@@ -105,7 +105,7 @@
           "builds": [
             {
               "biscuit": "4 Daño Tierra",
-              "setLabel": "X6",
+              "tart": "raspberry",
               "toppings": [{ "type": "raspberry", "count": 5 }],
               "stats": [
                 { "label": "CD", "value": "8%", "key": true },
@@ -120,7 +120,7 @@
           "builds": [
             {
               "biscuit": "4 Daño Caos",
-              "setLabel": "X4/2",
+              "tart": "raspberry",
               "toppings": [
                 { "type": "raspberry", "count": 3 },
                 { "type": "chocolate", "count": 2 }
@@ -138,7 +138,7 @@
           "builds": [
             {
               "biscuit": "4 Daño Veneno",
-              "setLabel": "X4/2",
+              "tart": "apple",
               "toppings": [
                 { "type": "apple", "count": 3 },
                 { "type": "chocolate", "count": 2 }
@@ -156,7 +156,7 @@
           "builds": [
             {
               "biscuit": "4 Daño Luz",
-              "setLabel": "X6",
+              "tart": "raspberry",
               "toppings": [{ "type": "raspberry", "count": 5 }],
               "stats": [
                 { "label": "CD", "value": "8%", "key": true },
@@ -172,7 +172,7 @@
           "builds": [
             {
               "biscuit": "4 CD",
-              "setLabel": "X6",
+              "tart": "raspberry",
               "toppings": [{ "type": "raspberry", "count": 5 }],
               "stats": [
                 { "label": "DMR", "value": "75%", "key": true },

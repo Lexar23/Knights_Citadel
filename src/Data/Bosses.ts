@@ -34,12 +34,13 @@ export function validateBoss(data: unknown): IBoss {
 
     member.builds.forEach((build, i) => {
       const label = `${member.cookieId} build ${i + 1}`;
-      const keys: ToppingKey[] = [...build.toppings.map((p) => p.type), ...(build.tart ? [build.tart] : [])];
+      if (!build.tart) fail(`${label}: falta "tart" (cada build lleva 5 toppings y 1 tarta)`);
+      const keys: ToppingKey[] = [...build.toppings.map((p) => p.type), build.tart];
       keys.forEach((k) => {
         if (!TOPPING_CATALOG[k]) fail(`${label}: topping desconocido "${k}". Usa: ${Object.keys(TOPPING_CATALOG).join(", ")}`);
       });
       const total = build.toppings.reduce((sum, p) => sum + p.count, 0);
-      if (total !== 5) fail(`${label}: los toppings suman ${total}, deben ser 5`);
+      if (total !== 5) fail(`${label}: los toppings suman ${total}, deben ser 5 (la tarta va aparte)`);
     });
   });
 

@@ -18,7 +18,7 @@
       "builds": [
         {
           "biscuit": "4 Vel. Ataque",
-          "setLabel": "X4/2",
+          "tart": "caramel",
           "toppings": [
             {
               "type": "caramel",
@@ -54,7 +54,7 @@
       "builds": [
         {
           "biscuit": "4 CD",
-          "setLabel": "X6",
+          "tart": "chocolate",
           "toppings": [
             {
               "type": "chocolate",
@@ -86,7 +86,7 @@
       "builds": [
         {
           "biscuit": "4 Vel. Ataque",
-          "setLabel": "X3/3",
+          "tart": "caramel",
           "toppings": [
             {
               "type": "caramel",
@@ -123,7 +123,7 @@
       "builds": [
         {
           "biscuit": "4 CD",
-          "setLabel": "X3/3",
+          "tart": "raspberry",
           "toppings": [
             {
               "type": "raspberry",
@@ -154,15 +154,15 @@
       "builds": [
         {
           "biscuit": "4 CD",
-          "setLabel": "X2/4",
+          "tart": "chocolate",
           "toppings": [
             {
               "type": "raspberry",
-              "count": 1
+              "count": 2
             },
             {
               "type": "chocolate",
-              "count": 4
+              "count": 3
             }
           ],
           "stats": [

@@ -18,18 +18,18 @@
       "builds": [
         {
           "biscuit": "4 Daño Eléctrico",
-          "setLabel": "X2/2/2",
+          "tart": "caramel",
           "toppings": [
             {
-              "type": "apple",
+              "type": "caramel",
               "count": 1
             },
             {
-              "type": "raspberry",
+              "type": "apple",
               "count": 2
             },
             {
-              "type": "caramel",
+              "type": "raspberry",
               "count": 2
             }
           ],
@@ -58,19 +58,15 @@
       "builds": [
         {
           "biscuit": "4 HP",
-          "setLabel": "X3/2/1",
+          "tart": "chocolate",
           "toppings": [
             {
               "type": "peanut",
-              "count": 2
+              "count": 3
             },
             {
               "type": "apple",
               "count": 2
-            },
-            {
-              "type": "chocolate",
-              "count": 1
             }
           ],
           "stats": [
@@ -99,7 +95,7 @@
       "builds": [
         {
           "biscuit": "4 Daño Viento",
-          "setLabel": "X4/2",
+          "tart": "raspberry",
           "toppings": [
             {
               "type": "raspberry",
@@ -137,7 +133,7 @@
       "builds": [
         {
           "biscuit": "4 CD",
-          "setLabel": "X6",
+          "tart": "chocolate",
           "toppings": [
             {
               "type": "chocolate",
@@ -169,7 +165,7 @@
       "builds": [
         {
           "biscuit": "4 CD",
-          "setLabel": "X4/2",
+          "tart": "chocolate",
           "toppings": [
             {
               "type": "chocolate",

@@ -31,12 +31,10 @@ export interface ICookieBuild {
   name?: string;
   /** Beascuit / biscuit recomendado (ej. "4 Daño Agua"). */
   biscuit: string;
-  /** Tarta de toppings. Si se omite se asume la del primer topping. */
-  tart?: ToppingKey;
-  /** 5 toppings en total. */
+  /** Tarta de toppings (obligatoria). Va aparte: no es uno de los 5 toppings. */
+  tart: ToppingKey;
+  /** Exactamente 5 toppings (sin contar la tarta). */
   toppings: IToppingPiece[];
-  /** Notación de la guía original (ej. "X4/2"), cuenta la tarta. */
-  setLabel?: string;
   stats: IStatTarget[];
   notes?: string[];
 }

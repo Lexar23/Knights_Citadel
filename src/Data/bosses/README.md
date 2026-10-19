@@ -28,12 +28,11 @@ Para agregar un jefe nuevo: crea su JSON e impórtalo en `src/Data/Bosses.ts`.
         {
           "name": "Build 1",        // opcional
           "biscuit": "4 Daño Eléctrico",
-          "tart": "apple",          // opcional; si falta se usa el primer topping
-          "setLabel": "X2/2/2",     // opcional; si falta se calcula
-          "toppings": [             // deben sumar 5
-            { "type": "apple", "count": 1 },
-            { "type": "raspberry", "count": 2 },
-            { "type": "caramel", "count": 2 }
+          "tart": "caramel",        // OBLIGATORIA: va aparte, no es un topping
+          "toppings": [             // exactamente 5 (la tarta va aparte)
+            { "type": "caramel", "count": 1 },
+            { "type": "apple", "count": 2 },
+            { "type": "raspberry", "count": 2 }
           ],
           "stats": [
             { "label": "ATK SPD", "value": "33.1%", "key": true },
@@ -49,6 +48,14 @@ Para agregar un jefe nuevo: crea su JSON e impórtalo en `src/Data/Bosses.ts`.
   "credit": { "author": "Camera04", "contacts": [{ "label": "Discord", "value": "@Camera04_" }], "note": "…" }
 }
 ```
+
+## Regla: 5 toppings + 1 tarta
+
+Cada build lleva **exactamente 5 toppings y 1 tarta**. La tarta va aparte: **no** es un topping
+ni suma al set. El set que muestra la página (ej. `X3/2`) se calcula solo con los 5 toppings.
+No copies la notación de las guías en imagen (`X4/2`, `X6`…): cuentan la tarta como topping.
+Si falta `"tart"` o los toppings no suman 5, el build falla con un mensaje que indica el
+archivo y la galleta.
 
 ## Valores válidos
 

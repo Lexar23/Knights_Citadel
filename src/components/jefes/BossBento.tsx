@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { IBoss, ICookieBuild, ToppingKey } from "@/Interfaces/IBoss";
 import { getCookie } from "@/Data/cookies";
+import { BISCUITS } from "@/Data/Biscuits";
 import { TOPPING_CATALOG } from "@/Data/Toppings";
 import { Treasures } from "@/Data/Treasures";
 import { ICookieImages, pickBuildImage, pickTileImage } from "@/lib/cookieImagePick";
@@ -17,14 +18,13 @@ interface BossBentoProps {
   images?: Record<string, ICookieImages>;
 }
 
-/** Piezas del set contando la tarta como +1 (como en la notación de las guías). */
+/** Set de toppings: solo los 5 toppings (la tarta va aparte, no es un topping). */
 function getSetPieces(build: ICookieBuild) {
-  const tart: ToppingKey = build.tart ?? build.toppings[0].type;
+  const tart: ToppingKey = build.tart;
   const counts = new Map<ToppingKey, number>();
   build.toppings.forEach((p) => counts.set(p.type, (counts.get(p.type) ?? 0) + p.count));
-  counts.set(tart, (counts.get(tart) ?? 0) + 1);
   const pieces = [...counts.entries()].map(([type, count]) => ({ type, count }));
-  const label = build.setLabel ?? `X${pieces.map((p) => p.count).join("/")}`;
+  const label = `X${pieces.map((p) => p.count).join("/")}`;
   return { tart, pieces, label };
 }
 
@@ -59,6 +59,8 @@ export default function BossBento({ boss, titleAs: Title = "h1", images = {} }: 
   const cookie = getCookie(member.cookieId);
   const build = member.builds[Math.min(buildIdx, member.builds.length - 1)];
   const { tart, pieces, label } = getSetPieces(build);
+  const biscuitClass = cookie.cookieClass;
+  const biscuitArt = biscuitClass ? BISCUITS[biscuitClass] : undefined;
   const notes = [...new Set([...(member.notes ?? []), ...(build.notes ?? [])])];
 
   const selectCookie = (i: number) => {
@@ -149,18 +151,34 @@ export default function BossBento({ boss, titleAs: Title = "h1", images = {} }: 
         <Portrait cookieId={member.cookieId} src={pickBuildImage(images[member.cookieId])} sizes="240px" />
       </div>
 
-      {/* 4 · Toppings + tarta */}
-      <div className={`bento-tart relative flex flex-col items-center justify-center p-3 ${cell} bg-carbon-veil`}>
-        <div className="w-full max-w-[240px]">
-          <div className="relative mx-auto aspect-square w-full">
+      {/* 4 · Toppings + tarta (arriba) / Biscuit (abajo) */}
+      <div className={`bento-tart relative flex flex-col overflow-hidden ${cell} bg-carbon-veil`}>
+        <div className="flex flex-1 flex-col items-center justify-center px-3 pt-3 pb-2">
+          <div className="w-full max-w-[200px] lg:max-w-[176px] xl:max-w-[196px]">
             <ToppingTart tart={tart} toppings={build.toppings} />
           </div>
+          <p className="mt-1 text-[12px] text-deep-fern">Tarta de {TOPPING_CATALOG[tart].shortName}</p>
         </div>
-        <p className="mt-1 text-[12px] text-deep-fern">
-          Tarta de {TOPPING_CATALOG[tart].shortName}
-          {build.tart ? "" : " (sugerida)"}
-        </p>
-        {member.focus && <span className="chip mt-2 max-w-full truncate">{member.focus}</span>}
+
+        <div className="flex items-center gap-3 border-t-2 border-pine-15 bg-ground-iron/70 px-3 py-2.5">
+          {biscuitArt ? (
+            <span className="relative h-11 w-11 shrink-0" title={`Biscuit de ${biscuitArt.label}`}>
+              <Image src={biscuitArt.img} alt={`Biscuit de ${biscuitArt.label}`} fill sizes="44px" className="object-contain" />
+            </span>
+          ) : (
+            <span
+              className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border-2 border-dashed border-pine-15 text-[11px] text-deep-fern"
+              aria-hidden="true"
+            >
+              ?
+            </span>
+          )}
+          <div className="min-w-0">
+            <p className="eyebrow">Biscuit</p>
+            <p className="text-[14px] leading-snug text-phosphor-white">{build.biscuit}</p>
+            {member.focus && <span className="chip mt-1 max-w-full truncate">{member.focus}</span>}
+          </div>
+        </div>
       </div>
 
       {/* Set de toppings */}
@@ -188,7 +206,7 @@ export default function BossBento({ boss, titleAs: Title = "h1", images = {} }: 
         </ul>
       </div>
 
-      {/* 5 · Stats → / Biscuit → */}
+      {/* 5 · Stats */}
       <div className={`bento-stat flex flex-col ${cell}`}>
         <div className="flex-1 p-4">
           <p className="eyebrow mb-2">Stats objetivo</p>
@@ -214,10 +232,6 @@ export default function BossBento({ boss, titleAs: Title = "h1", images = {} }: 
                 ))}
             </ul>
           )}
-        </div>
-        <div className="border-t border-phosphor-white/70 p-4">
-          <p className="eyebrow">Biscuit</p>
-          <p className="mt-1 text-[15px] leading-snug text-phosphor-white">{build.biscuit}</p>
         </div>
       </div>
 

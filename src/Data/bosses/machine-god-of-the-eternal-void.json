@@ -19,7 +19,7 @@
       "builds": [
         {
           "biscuit": "4 Daño Agua",
-          "setLabel": "X6",
+          "tart": "chocolate",
           "toppings": [
             {
               "type": "chocolate",
@@ -50,7 +50,7 @@
       "builds": [
         {
           "biscuit": "4 Daño Agua",
-          "setLabel": "X6",
+          "tart": "chocolate",
           "toppings": [
             {
               "type": "chocolate",
@@ -82,7 +82,7 @@
       "builds": [
         {
           "biscuit": "4 Daño Agua",
-          "setLabel": "X3/3",
+          "tart": "chocolate",
           "toppings": [
             {
               "type": "chocolate",
@@ -119,15 +119,15 @@
       "builds": [
         {
           "biscuit": "4 Daño Agua",
-          "setLabel": "X4/2",
+          "tart": "chocolate",
           "toppings": [
             {
               "type": "raspberry",
-              "count": 3
+              "count": 4
             },
             {
               "type": "chocolate",
-              "count": 2
+              "count": 1
             }
           ],
           "stats": [
@@ -156,7 +156,7 @@
       "builds": [
         {
           "biscuit": "4 CD",
-          "setLabel": "X4/2",
+          "tart": "raspberry",
           "toppings": [
             {
               "type": "raspberry",
