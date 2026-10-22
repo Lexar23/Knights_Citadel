@@ -4,7 +4,7 @@ import Link from "next/link";
 import PageHeader from "@/components/common/PageHeader";
 import CookieAvatar from "@/components/jefes/CookieAvatar";
 import { Events } from "@/Data/Events";
-import { Treasures } from "@/Data/Treasures";
+import { Treasures, treasureInitials } from "@/Data/Treasures";
 
 export const metadata = {
   title: "Eventos | Knights Citadel",
@@ -63,7 +63,13 @@ export default function EventosPage() {
                 <div className="flex items-center gap-1">
                   {ev.treasures.map((key, i) => (
                     <span key={key + i} className="relative h-8 w-8" title={Treasures[key].name}>
-                      <Image src={Treasures[key].img} alt={Treasures[key].name} fill sizes="32px" className="object-contain" />
+                      {Treasures[key].img ? (
+                        <Image src={Treasures[key].img} alt={Treasures[key].name} fill sizes="32px" className="object-contain" />
+                      ) : (
+                        <span className="flex h-8 w-8 items-center justify-center rounded-full border-2 border-dashed border-pine-15 text-[10px] text-moss-70">
+                          {treasureInitials(Treasures[key].name)}
+                        </span>
+                      )}
                     </span>
                   ))}
                   <span className="ml-3 text-[14px] text-fern-link group-hover:text-phosphor-white">Ver guía →</span>

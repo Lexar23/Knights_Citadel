@@ -1,0 +1,104 @@
+{
+  "id": "millennial-tree",
+  "name": "Equipo Millennial Tree",
+  "siglas": "TREE",
+  "category": "Arena PvP · Destruction and Creation 2",
+  "url": "/arena/millennial-tree",
+  "background": "/Assets/backgrounds/pageBackgrounds/Pvp.webp",
+  "treasures": ["jewelbox", "pergamino", "tickwatch"],
+  "team": [
+    {
+      "cookieId": "MT",
+      "focus": "Tanque / Soporte",
+      "builds": [
+        {
+          "biscuit": "Legendario Hearty · 4× HP",
+          "tart": "peanut",
+          "toppings": [{ "type": "peanut", "count": 5 }],
+          "stats": [
+            { "label": "DMR", "value": "25%+", "key": true },
+            { "label": "HP", "value": "Máx." }
+          ]
+        }
+      ]
+    },
+    {
+      "cookieId": "AD",
+      "focus": "Daño (Tierra)",
+      "notes": ["El beascuit necesita al menos 2× Daño Tierra para que funcione su habilidad."],
+      "builds": [
+        {
+          "biscuit": "Legendario Earthen Zesty · 2× Daño Tierra + 2× Bypass DMR",
+          "tart": "raspberry",
+          "toppings": [{ "type": "raspberry", "count": 5 }],
+          "stats": [
+            { "label": "DMR", "value": "25%+", "key": true },
+            { "label": "CD", "value": "7 – 8%", "key": true }
+          ]
+        }
+      ]
+    },
+    {
+      "cookieId": "TS",
+      "focus": "Daño (Crit)",
+      "builds": [
+        {
+          "biscuit": "Legendario Crispy · 4× Bypass DMR",
+          "tart": "raspberry",
+          "toppings": [
+            { "type": "raspberry", "count": 1 },
+            { "type": "apple", "count": 4 }
+          ],
+          "stats": [
+            { "label": "DMR", "value": "25%+", "key": true },
+            { "label": "CD", "value": "7 – 8%", "key": true },
+            { "label": "Crit", "value": "Máx.", "note": "después de cumplir lo demás" }
+          ]
+        }
+      ]
+    },
+    {
+      "cookieId": "TK",
+      "focus": "Control / Cooldown",
+      "builds": [
+        {
+          "biscuit": "Legendario Zesty · 4× Bypass DMR",
+          "tart": "chocolate",
+          "toppings": [{ "type": "chocolate", "count": 5 }],
+          "stats": [
+            { "label": "DMR", "value": "25%+", "key": true },
+            { "label": "CD", "value": "34%+", "key": true }
+          ]
+        }
+      ]
+    },
+    {
+      "cookieId": "NQ",
+      "focus": "Curación",
+      "builds": [
+        {
+          "biscuit": "Legendario Sweet · 3× HP + 1× CD",
+          "tart": "raspberry",
+          "toppings": [{ "type": "raspberry", "count": 5 }],
+          "stats": [
+            { "label": "DMR", "value": "25%+", "key": true },
+            { "label": "CD", "value": "14%+", "key": true },
+            { "label": "HP", "value": "Máx.", "note": "después de cumplir lo demás" }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Equipo estándar de defensa: Millennial Tree aguanta al frente mientras Ananas Dragon y Time Shadow hacen el daño.",
+    "25%+ de DMR es el objetivo base de Arena en las 5 galletas.",
+    "Los objetivos de stats son prioridades, no cantidades exactas de subs.",
+    "Tesoros: Mysterious Jewelry Box (daño en área + aturdimiento), Old Pilgrim's Scroll (+ATK) y Ticking Jelly Watch (-20% cooldown)."
+  ],
+  "timing": [],
+  "credit": {
+    "author": "HyRoolLegend",
+    "contacts": [{ "label": "Fuente", "value": "The Cookie Book · Standard Tree Comp" }],
+    "note": "Build de la comunidad, actualizada el 2026-08-30."
+  }
+}

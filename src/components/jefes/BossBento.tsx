@@ -6,7 +6,7 @@ import { IBoss, ICookieBuild, ToppingKey } from "@/Interfaces/IBoss";
 import { getCookie } from "@/Data/cookies";
 import { BISCUITS } from "@/Data/Biscuits";
 import { TOPPING_CATALOG } from "@/Data/Toppings";
-import { Treasures } from "@/Data/Treasures";
+import { Treasures, treasureInitials } from "@/Data/Treasures";
 import { ICookieImages, pickBuildImage, pickTileImage } from "@/lib/cookieImagePick";
 import ToppingTart from "./ToppingTart";
 
@@ -30,6 +30,7 @@ function getSetPieces(build: ICookieBuild) {
 
 function initials(name: string) {
   return name
+    .replace(/\(.*?\)/g, "")
     .replace(/Cookie/i, "")
     .trim()
     .split(/[\s-]+/)
@@ -59,6 +60,8 @@ export default function BossBento({ boss, titleAs: Title = "h1", images = {} }: 
   const cookie = getCookie(member.cookieId);
   const build = member.builds[Math.min(buildIdx, member.builds.length - 1)];
   const { tart, pieces, label } = getSetPieces(build);
+  // "Legendario Crispy · 4× Bypass DMR" → nombre + stats en dos líneas
+  const [biscuitName, biscuitStats] = build.biscuit.split(" · ");
   const biscuitClass = cookie.cookieClass;
   const biscuitArt = biscuitClass ? BISCUITS[biscuitClass] : undefined;
   const notes = [...new Set([...(member.notes ?? []), ...(build.notes ?? [])])];
@@ -89,8 +92,13 @@ export default function BossBento({ boss, titleAs: Title = "h1", images = {} }: 
 
       {/* 6 · Título */}
       <div className={`bento-title flex flex-col justify-center px-6 py-4 ${cell}`}>
-        <p className="eyebrow">{boss.category ?? "Batalla de Gremio"}{boss.credit ? ` · Guía por ${boss.credit.author}` : ""}</p>
-        <Title className="mt-1 font-cookie text-[26px] leading-tight lg:text-[24px] xl:text-[28px]">{boss.name}</Title>
+        <p className="eyebrow truncate" title={`${boss.category ?? "Batalla de Gremio"}${boss.credit ? ` · Guía por ${boss.credit.author}` : ""}`}>
+          {boss.category ?? "Batalla de Gremio"}
+          {boss.credit ? ` · Guía por ${boss.credit.author}` : ""}
+        </p>
+        <Title className="mt-1 line-clamp-2 font-cookie text-[26px] leading-tight lg:text-[20px] xl:text-[26px]">
+          {boss.name}
+        </Title>
       </div>
 
       {/* 1-3 · Tesoros */}
@@ -102,9 +110,18 @@ export default function BossBento({ boss, titleAs: Title = "h1", images = {} }: 
             className={`bento-t bento-t${i + 1} flex flex-col items-center justify-center gap-1 p-2 text-center ${cell}`}
             title={t.name}
           >
-            <span className="relative h-12 w-12">
-              <Image src={t.img} alt="" fill sizes="48px" className="object-contain" />
-            </span>
+            {t.img ? (
+              <span className="relative h-12 w-12">
+                <Image src={t.img} alt="" fill sizes="48px" className="object-contain" />
+              </span>
+            ) : (
+              <span
+                className="flex h-12 w-12 items-center justify-center rounded-full border-2 border-dashed border-pine-15 font-cookie text-[14px] text-moss-70"
+                aria-hidden="true"
+              >
+                {treasureInitials(t.name)}
+              </span>
+            )}
             <span className="text-[12px] leading-tight text-moss-80">{t.name}</span>
           </div>
         );
@@ -153,8 +170,8 @@ export default function BossBento({ boss, titleAs: Title = "h1", images = {} }: 
 
       {/* 4 · Toppings + tarta (arriba) / Biscuit (abajo) */}
       <div className={`bento-tart relative flex flex-col overflow-hidden ${cell} bg-carbon-veil`}>
-        <div className="flex flex-1 flex-col items-center justify-center px-3 pt-3 pb-2">
-          <div className="w-full max-w-[200px] lg:max-w-[176px] xl:max-w-[196px]">
+        <div className="flex min-h-0 flex-1 flex-col items-center justify-center px-3 pt-3 pb-2">
+          <div className="aspect-square w-full max-w-[200px] lg:min-h-0 lg:flex-1 lg:max-h-[196px] lg:w-auto lg:max-w-full">
             <ToppingTart tart={tart} toppings={build.toppings} />
           </div>
           <p className="mt-1 text-[12px] text-deep-fern">Tarta de {TOPPING_CATALOG[tart].shortName}</p>
@@ -175,7 +192,8 @@ export default function BossBento({ boss, titleAs: Title = "h1", images = {} }: 
           )}
           <div className="min-w-0">
             <p className="eyebrow">Biscuit</p>
-            <p className="text-[14px] leading-snug text-phosphor-white">{build.biscuit}</p>
+            <p className="text-[14px] leading-snug text-phosphor-white">{biscuitName}</p>
+            {biscuitStats && <p className="text-[12px] leading-snug text-moss-80">{biscuitStats}</p>}
             {member.focus && <span className="chip mt-1 max-w-full truncate">{member.focus}</span>}
           </div>
         </div>
@@ -267,7 +285,7 @@ export default function BossBento({ boss, titleAs: Title = "h1", images = {} }: 
           </ul>
         ) : (
           <p className="text-[14px] text-deep-fern">
-            {member.builds.length > 1 ? "Elige la build que mejor se ajuste a tus subs." : "Build única recomendada para este jefe."}
+            {member.builds.length > 1 ? "Elige la build que mejor se ajuste a tus subs." : "Build única recomendada para esta galleta."}
           </p>
         )}
       </div>

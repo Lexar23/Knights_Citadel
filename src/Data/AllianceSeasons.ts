@@ -3,6 +3,7 @@ import { IAllianceSeason } from "@/Interfaces/IAlliance";
 import { validateBoss } from "@/Data/Bosses";
 
 import season32 from "./alliance/season-3-2.json";
+import season33 from "./alliance/season-3-3.json";
 
 /**
  * ============================================================================
@@ -11,7 +12,7 @@ import season32 from "./alliance/season-3-2.json";
  * Cada temporada tiene varios equipos ("teams"); cada equipo usa el mismo
  * formato de "team" que los jefes. Marca con "current": true la temporada actual.
  */
-const seasons = [season32 as IAllianceSeason];
+const seasons = [season32, season33] as IAllianceSeason[];
 
 /** Convierte un equipo de la temporada en una "guía" para reutilizar el bento. */
 export function seasonTeamAsGuide(season: IAllianceSeason, index: number): IBoss {

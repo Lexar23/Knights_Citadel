@@ -1,0 +1,82 @@
+{
+  "id": "sugar-swan",
+  "name": "Equipo Sugar Swan y Snapdragon",
+  "siglas": "SWAN",
+  "category": "Arena PvP · Destruction and Creation 2",
+  "url": "/arena/sugar-swan",
+  "background": "/Assets/backgrounds/pageBackgrounds/Pvp.webp",
+  "treasures": ["ragingdunes", "reloj", "booksellermonocle"],
+  "team": [
+    {
+      "cookieId": "SS",
+      "focus": "Curación / Revivir",
+      "builds": [
+        {
+          "biscuit": "Legendario Sweet · 4× CD",
+          "tart": "chocolate",
+          "toppings": [{ "type": "chocolate", "count": 5 }],
+          "stats": [{ "label": "DMR", "value": "25%+", "note": "objetivo estándar de Arena", "key": true }]
+        }
+      ]
+    },
+    {
+      "cookieId": "SSA",
+      "focus": "Daño (Acero)",
+      "builds": [
+        {
+          "biscuit": "Tainted Steelen Crispy · Daño Acero + 3× ATK",
+          "tart": "raspberry",
+          "toppings": [{ "type": "raspberry", "count": 5 }],
+          "stats": [{ "label": "DMR", "value": "25%+", "note": "objetivo estándar de Arena", "key": true }]
+        }
+      ]
+    },
+    {
+      "cookieId": "DE",
+      "focus": "Daño (Caos)",
+      "builds": [
+        {
+          "biscuit": "Tainted Chaotic Zesty · Daño Caos + 3× ATK",
+          "tart": "raspberry",
+          "toppings": [{ "type": "raspberry", "count": 5 }],
+          "stats": [{ "label": "DMR", "value": "25%+", "note": "objetivo estándar de Arena", "key": true }]
+        }
+      ]
+    },
+    {
+      "cookieId": "SM",
+      "focus": "Daño / Control",
+      "builds": [
+        {
+          "biscuit": "Legendario Zesty · 4× CD",
+          "tart": "chocolate",
+          "toppings": [{ "type": "chocolate", "count": 5 }],
+          "stats": [{ "label": "DMR", "value": "25%+", "note": "objetivo estándar de Arena", "key": true }]
+        }
+      ]
+    },
+    {
+      "cookieId": "SD",
+      "focus": "Soporte",
+      "builds": [
+        {
+          "biscuit": "Legendario Hearty · 4× CD",
+          "tart": "chocolate",
+          "toppings": [{ "type": "chocolate", "count": 5 }],
+          "stats": [{ "label": "DMR", "value": "25%+", "note": "objetivo estándar de Arena", "key": true }]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Alternativa sin el núcleo Ananas Dragon / Time Shadow / Timekeeper: Sugar Swan revive y Snapdragon cura y da resistencia a aturdimiento.",
+    "La fuente no publica valores de subs: el 25%+ de DMR es el objetivo estándar de Arena de las otras builds.",
+    "Tesoros: Vial of Raging Dunes (+ATK y +Crit Resist), Squishy Jelly Watch (-10~25% cooldown) y Bookseller's Monocle (limpia debuffs y cura)."
+  ],
+  "timing": [],
+  "credit": {
+    "author": "The Cookie Book (comunidad)",
+    "contacts": [{ "label": "Fuente", "value": "Sugar Swan & Snap Dragon Support" }],
+    "note": "Build de la comunidad, actualizada el 2026-09-13."
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "id": "rajapendra",
+  "name": "Equipo Rajapendra",
+  "siglas": "RAJA",
+  "category": "Arena PvP · Destruction and Creation 3",
+  "url": "/arena/rajapendra",
+  "background": "/Assets/backgrounds/pageBackgrounds/Pvp.webp",
+  "treasures": ["swanfeather", "jewelbox", "sagegem"],
+  "team": [
+    {
+      "cookieId": "RJ",
+      "focus": "Frente / Daño (Fuego)",
+      "builds": [
+        {
+          "biscuit": "Legendario Burning Chewy · Daño Fuego, CD, HP, ATK",
+          "tart": "raspberry",
+          "toppings": [
+            { "type": "raspberry", "count": 3 },
+            { "type": "chocolate", "count": 2 }
+          ],
+          "stats": [{ "label": "DMR", "value": "25%+", "note": "objetivo estándar de Arena", "key": true }]
+        }
+      ]
+    },
+    {
+      "cookieId": "AD",
+      "focus": "Daño (Tierra)",
+      "builds": [
+        {
+          "biscuit": "Tainted Earthen Zesty · Daño Tierra, HP, HP, CD",
+          "tart": "chocolate",
+          "toppings": [
+            { "type": "raspberry", "count": 2 },
+            { "type": "chocolate", "count": 2 },
+            { "type": "walnut", "count": 1 }
+          ],
+          "stats": [{ "label": "DMR", "value": "25%+", "note": "objetivo estándar de Arena", "key": true }]
+        }
+      ]
+    },
+    {
+      "cookieId": "TK",
+      "focus": "Control / Cooldown",
+      "builds": [
+        {
+          "biscuit": "Legendario Gleaming Zesty · Daño Luz, CD, ATK SPD, CD",
+          "tart": "walnut",
+          "toppings": [
+            { "type": "raspberry", "count": 1 },
+            { "type": "chocolate", "count": 3 },
+            { "type": "walnut", "count": 1 }
+          ],
+          "stats": [{ "label": "DMR", "value": "25%+", "note": "objetivo estándar de Arena", "key": true }]
+        }
+      ]
+    },
+    {
+      "cookieId": "TS",
+      "focus": "Daño (Oscuridad)",
+      "builds": [
+        {
+          "biscuit": "Tainted Dark Crispy · Daño Oscuridad, CD, HP, ATK",
+          "tart": "chocolate",
+          "toppings": [
+            { "type": "raspberry", "count": 3 },
+            { "type": "chocolate", "count": 1 },
+            { "type": "peanut", "count": 1 }
+          ],
+          "stats": [{ "label": "DMR", "value": "25%+", "note": "objetivo estándar de Arena", "key": true }]
+        }
+      ]
+    },
+    {
+      "cookieId": "NQ",
+      "focus": "Curación",
+      "builds": [
+        {
+          "biscuit": "Legendario Chaotic Sweet · 3× CD + HP",
+          "tart": "chocolate",
+          "toppings": [
+            { "type": "chocolate", "count": 3 },
+            { "type": "walnut", "count": 2 }
+          ],
+          "stats": [{ "label": "DMR", "value": "25%+", "note": "objetivo estándar de Arena", "key": true }]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Equipo de la temporada actual con Rajapendra al frente y toppings mixtos para más aguante (Hard Walnut y Healthy Peanut).",
+    "La fuente no publica valores de subs: el 25%+ de DMR es el objetivo estándar de Arena de las otras builds.",
+    "Tesoros: Sugar Swan's Shining Feather (revive una vez y reinicia el cooldown), Mysterious Jewelry Box y Great Sage's Gem (+25% DMR a todo el equipo)."
+  ],
+  "timing": [],
+  "credit": {
+    "author": "The Cookie Book (comunidad)",
+    "contacts": [{ "label": "Fuente", "value": "Rajapendra Core Team" }],
+    "note": "Build de la comunidad, actualizada el 2026-10-08."
+  }
+}

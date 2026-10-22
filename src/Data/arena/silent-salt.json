@@ -1,0 +1,108 @@
+{
+  "id": "silent-salt",
+  "name": "Equipo Silent Salt",
+  "siglas": "SALT",
+  "category": "Arena PvP · Destruction and Creation 2",
+  "url": "/arena/silent-salt",
+  "background": "/Assets/backgrounds/pageBackgrounds/Pvp.webp",
+  "treasures": ["silbato", "papercharm", "tickwatch"],
+  "team": [
+    {
+      "cookieId": "SSA",
+      "focus": "Daño / Inicio rápido",
+      "notes": ["Prueba distintas piezas de toppings hasta dar con el CD más bajo que aún consiga el inicio en 1 segundo."],
+      "builds": [
+        {
+          "biscuit": "Legendario Crispy · 4× Bypass DMR",
+          "tart": "chocolate",
+          "toppings": [
+            { "type": "raspberry", "count": 3 },
+            { "type": "chocolate", "count": 2 }
+          ],
+          "stats": [
+            { "label": "DMR", "value": "25%+", "key": true },
+            { "label": "CD", "value": "≈ 18.5%", "key": true }
+          ]
+        }
+      ]
+    },
+    {
+      "cookieId": "AD",
+      "focus": "Daño (Tierra)",
+      "notes": ["El beascuit necesita al menos 2× Daño Tierra para que funcione su habilidad."],
+      "builds": [
+        {
+          "biscuit": "Legendario Earthen Zesty · 2× Daño Tierra + 2× Bypass DMR",
+          "tart": "raspberry",
+          "toppings": [{ "type": "raspberry", "count": 5 }],
+          "stats": [
+            { "label": "DMR", "value": "25%+", "key": true },
+            { "label": "CD", "value": "5 – 8%", "key": true }
+          ]
+        }
+      ]
+    },
+    {
+      "cookieId": "TS",
+      "focus": "Daño (Crit)",
+      "builds": [
+        {
+          "biscuit": "Legendario Crispy · 4× Bypass DMR",
+          "tart": "raspberry",
+          "toppings": [
+            { "type": "raspberry", "count": 1 },
+            { "type": "apple", "count": 4 }
+          ],
+          "stats": [
+            { "label": "DMR", "value": "25%+", "key": true },
+            { "label": "CD", "value": "7 – 8%", "key": true },
+            { "label": "Crit", "value": "Máx.", "note": "después de cumplir lo demás" }
+          ]
+        }
+      ]
+    },
+    {
+      "cookieId": "TK",
+      "focus": "Control / Cooldown",
+      "builds": [
+        {
+          "biscuit": "Legendario Zesty · 4× Bypass DMR",
+          "tart": "chocolate",
+          "toppings": [{ "type": "chocolate", "count": 5 }],
+          "stats": [
+            { "label": "DMR", "value": "25%+", "key": true },
+            { "label": "CD", "value": "34%+", "key": true }
+          ]
+        }
+      ]
+    },
+    {
+      "cookieId": "NQ",
+      "focus": "Curación",
+      "builds": [
+        {
+          "biscuit": "Legendario Sweet · 2× HP + 2× CD",
+          "tart": "raspberry",
+          "toppings": [{ "type": "raspberry", "count": 5 }],
+          "stats": [
+            { "label": "DMR", "value": "25%+", "key": true },
+            { "label": "CD", "value": "14%+", "key": true },
+            { "label": "HP", "value": "Máx.", "note": "después de cumplir lo demás" }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Pensado para contrarrestar los equipos de Millennial Tree.",
+    "El CD es la variable principal: ajusta las piezas de toppings para llegar a cada objetivo.",
+    "25%+ de DMR es el objetivo base de Arena en las 5 galletas.",
+    "Tesoros: Dream Conductor's Whistle (+Crit, +ATK y DMR a los 2 de mayor ATK), Thunder God's Paper Charm (quita buffs y daño eléctrico) y Ticking Jelly Watch (-20% cooldown)."
+  ],
+  "timing": [],
+  "credit": {
+    "author": "The Cookie Book (comunidad)",
+    "contacts": [{ "label": "Fuente", "value": "Standard Salt Comp" }],
+    "note": "Build de la comunidad, actualizada el 2026-08-30."
+  }
+}

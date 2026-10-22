@@ -10,7 +10,21 @@ export type ToppingKey =
   | "candy"
   | "walnut";
 
-export type TreasureKey = "red" | "silbato" | "pergamino" | "reloj" | "speed";
+export type TreasureKey =
+  | "red"
+  | "silbato"
+  | "pergamino"
+  | "reloj"
+  | "speed"
+  // Arena PvP
+  | "jewelbox"
+  | "tickwatch"
+  | "papercharm"
+  | "swanfeather"
+  | "sagegem"
+  | "explorermonocle"
+  | "ragingdunes"
+  | "booksellermonocle";
 
 /** Una pieza del set de toppings: tipo + cantidad de toppings (sin contar la tarta). */
 export interface IToppingPiece {

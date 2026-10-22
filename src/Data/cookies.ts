@@ -53,6 +53,17 @@ export const Cookies: Record<string, ICookie> = {
   TK: { id: "TK", name: "Timekeeper Cookie", cookieClass: "magic" },
   LT: { id: "LT", name: "Litmus Cookie", cookieClass: "healing" },
 
+  // --- Cookie Alliance: Season 3-3 ---
+  ES: { id: "ES", name: "Eternal Sugar Cookie", cookieClass: "bomber" },
+
+  // --- Arena PvP ---
+  MT: { id: "MT", name: "Millennial Tree Cookie", cookieClass: "support" },
+  TS: { id: "TS", name: "Time Shadow Cookie", cookieClass: "ambush" },
+  NQ: { id: "NQ", name: "Nether Queen Cookie", cookieClass: "healing" },
+  HB: { id: "HB", name: "Hollyberry Cookie (Aegis)", cookieClass: "defense" },
+  SSA: { id: "SSA", name: "Silent Salt Cookie", cookieClass: "ambush" },
+  SD: { id: "SD", name: "Snapdragon Cookie", cookieClass: "support" },
+
   // --- Red Velvet Dragon ---
   PD: { id: "PD", name: "Pompom Dough Cookie", cookieClass: "support" },
   SM: { id: "SM", name: "Shadow Milk Cookie", cookieClass: "magic" },

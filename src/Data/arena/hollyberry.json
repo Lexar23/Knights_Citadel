@@ -1,0 +1,108 @@
+{
+  "id": "hollyberry",
+  "name": "Equipo Hollyberry",
+  "siglas": "HOLLY",
+  "category": "Arena PvP · Destruction and Creation 3",
+  "url": "/arena/hollyberry",
+  "background": "/Assets/backgrounds/pageBackgrounds/Pvp.webp",
+  "treasures": ["jewelbox", "pergamino", "tickwatch"],
+  "team": [
+    {
+      "cookieId": "HB",
+      "focus": "Tanque",
+      "notes": ["Alternativa de Chateaw: full Chocolate con beascuits de HP."],
+      "builds": [
+        {
+          "biscuit": "Legendario Hard · Cooldown",
+          "tart": "peanut",
+          "toppings": [{ "type": "peanut", "count": 5 }],
+          "stats": [
+            { "label": "DMR", "value": "25%+", "key": true },
+            { "label": "CD", "value": "30%+", "key": true }
+          ]
+        }
+      ]
+    },
+    {
+      "cookieId": "AD",
+      "focus": "Daño (Tierra)",
+      "builds": [
+        {
+          "biscuit": "Legendario Earthen Zesty · Daño Tierra + Bypass DMR",
+          "tart": "raspberry",
+          "toppings": [{ "type": "raspberry", "count": 5 }],
+          "stats": [
+            { "label": "ATK", "value": "60%", "note": "de los toppings, para reducir CD" },
+            { "label": "DMR", "value": "25%", "key": true },
+            { "label": "CD", "value": "8.5%+", "key": true }
+          ]
+        }
+      ]
+    },
+    {
+      "cookieId": "TS",
+      "focus": "Daño (Crit)",
+      "builds": [
+        {
+          "biscuit": "Legendario Crispy · Bypass DMR",
+          "tart": "apple",
+          "toppings": [{ "type": "apple", "count": 5 }],
+          "stats": [
+            { "label": "Crit", "value": "70%", "note": "de los toppings, para reducir CD" },
+            { "label": "DMR", "value": "25%", "key": true },
+            { "label": "CD", "value": "7%+", "key": true }
+          ]
+        }
+      ]
+    },
+    {
+      "cookieId": "TK",
+      "focus": "Control / Cooldown",
+      "builds": [
+        {
+          "biscuit": "Legendario Zesty · Bypass DMR",
+          "tart": "chocolate",
+          "toppings": [{ "type": "chocolate", "count": 5 }],
+          "stats": [
+            { "label": "DMR", "value": "25%", "key": true },
+            { "label": "CD", "value": "35%+", "key": true }
+          ]
+        }
+      ]
+    },
+    {
+      "cookieId": "NQ",
+      "focus": "Curación",
+      "builds": [
+        {
+          "biscuit": "Legendario Sweet · HP",
+          "tart": "candy",
+          "toppings": [
+            { "type": "raspberry", "count": 4 },
+            { "type": "candy", "count": 1 }
+          ],
+          "stats": [
+            { "label": "ATK", "value": "50%", "note": "de los toppings, para reducir CD" },
+            { "label": "DMR", "value": "25%", "key": true },
+            { "label": "CD", "value": "8.5%+", "key": true },
+            { "label": "Amp Buff", "value": "20%+" }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Variante de la temporada actual con Hollyberry (Aegis) como tanque en lugar de Millennial Tree.",
+    "Ananas Dragon, Time Shadow y Nether Queen usan ATK o Crit alto de los toppings porque su habilidad reduce el cooldown con esos stats.",
+    "Tesoros: Mysterious Jewelry Box, Old Pilgrim's Scroll y Ticking Jelly Watch."
+  ],
+  "timing": [],
+  "credit": {
+    "author": "Chateaw",
+    "contacts": [
+      { "label": "Fuente", "value": "The Cookie Book · Hollyberry Arena Team" },
+      { "label": "Video", "value": "YouTube de Chateaw (6:20)" }
+    ],
+    "note": "Build actualizada el 2026-10-02."
+  }
+}

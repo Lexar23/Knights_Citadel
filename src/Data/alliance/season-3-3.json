@@ -1,0 +1,140 @@
+{
+  "id": "season-3-3",
+  "name": "Season 3-3",
+  "category": "Cookie Alliance",
+  "current": true,
+  "background": "/Assets/backgrounds/pageBackgrounds/Alliance.webp",
+  "teams": [
+    {
+      "name": "Primer Equipo",
+      "treasures": ["red", "pergamino", "reloj"],
+      "team": [
+        {
+          "cookieId": "BSP",
+          "focus": "Daño de Monstruos",
+          "builds": [
+            {
+              "biscuit": "4 Daño Fuego",
+              "tart": "raspberry",
+              "toppings": [{ "type": "raspberry", "count": 5 }],
+              "stats": [
+                { "label": "DMR", "value": "25%", "key": true },
+                { "label": "CD", "value": "8%", "key": true },
+                { "label": "ATK SPD", "value": "12%" },
+                { "label": "ATK", "value": "Máx." }
+              ]
+            }
+          ]
+        },
+        {
+          "cookieId": "MT",
+          "focus": "Daño a Monstruos",
+          "builds": [
+            {
+              "biscuit": "4 HP",
+              "tart": "peanut",
+              "toppings": [{ "type": "peanut", "count": 5 }],
+              "stats": [
+                { "label": "CD", "value": "5%", "key": true },
+                { "label": "HP", "value": "+100%", "key": true }
+              ]
+            }
+          ]
+        },
+        {
+          "cookieId": "TS",
+          "focus": "Daño a Monstruos",
+          "builds": [
+            {
+              "biscuit": "4 Daño Oscuridad",
+              "tart": "apple",
+              "toppings": [{ "type": "apple", "count": 5 }],
+              "stats": [
+                { "label": "CD", "value": "8%", "key": true },
+                { "label": "Crit", "value": "Máx.", "note": "en sub-stats" }
+              ]
+            }
+          ]
+        },
+        {
+          "cookieId": "ES",
+          "focus": "Daño a Monstruos",
+          "builds": [
+            {
+              "biscuit": "4 CD",
+              "tart": "apple",
+              "toppings": [{ "type": "apple", "count": 5 }],
+              "stats": [
+                { "label": "CD", "value": "30%", "key": true },
+                { "label": "Crit", "value": "Máx." },
+                { "label": "ATK", "value": "Máx.", "note": "en sub-stats" }
+              ]
+            }
+          ]
+        },
+        {
+          "cookieId": "FS",
+          "focus": "Daño a Monstruos",
+          "notes": ["Crystal Jam +15."],
+          "builds": [
+            {
+              "biscuit": "4 Daño Fuego",
+              "tart": "raspberry",
+              "toppings": [
+                { "type": "raspberry", "count": 3 },
+                { "type": "chocolate", "count": 2 }
+              ],
+              "stats": [
+                { "label": "CD", "value": "18%", "key": true },
+                { "label": "ATK & Crit", "value": "Máx." }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Segundo Equipo",
+      "treasures": ["red", "pergamino", "reloj"],
+      "team": [
+        {
+          "cookieId": "SF",
+          "focus": "Daño de Monstruos",
+          "notes": [
+            "Solo para el segundo jefe: tira su habilidad al menos 2 veces (puede revivir, no hay problema).",
+            "Cuando la barra del jefe esté al 85% Sea Fairy morirá; luego regresas al Primer Equipo."
+          ],
+          "builds": [
+            {
+              "biscuit": "4 Daño Agua",
+              "tart": "chocolate",
+              "toppings": [{ "type": "chocolate", "count": 5 }],
+              "stats": [
+                { "label": "CD", "value": "35%", "key": true },
+                { "label": "ATK", "value": "Máx." }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Efecto recomendado en la guía: +15% de ATK.",
+    "Nivel mínimo indicado en la guía: 20.",
+    "El Segundo Equipo lleva solo a Sea Fairy: su objetivo es casi llenar la barra del segundo jefe."
+  ],
+  "timing": [
+    "Para el Primer Equipo no hay un timing específico: es spam sin problema para el primer y segundo jefe.",
+    "El Segundo Equipo es para el segundo jefe: debes tirar al menos 2 veces las habilidades de Sea Fairy (ella puede revivir, no hay problema). El punto es que casi llenes la barra del jefe.",
+    "Cuando veas que la barra está al 85% Sea Fairy morirá → luego regresas al Primer Equipo."
+  ],
+  "credit": {
+    "author": "Camera04",
+    "contacts": [
+      { "label": "Facebook", "value": "@Byron Ramirez" },
+      { "label": "Discord", "value": "@Camera04_" }
+    ],
+    "note": "¿Buscas gremio? Escríbeme: @Camera04_ en DC · @Byron Ramirez en FB."
+  }
+}

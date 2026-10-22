@@ -6,12 +6,14 @@ interface GuideInfoProps {
   timing: string[];
   timingTitle: string;
   credit?: IGuideCredit;
+  /** false oculta la columna de Timing (ej. Arena, que es automática). */
+  showTiming?: boolean;
 }
 
 /** Bloque "Info" de una guía: notas importantes, créditos y timing. */
-export default function GuideInfo({ notes, timing, timingTitle, credit }: GuideInfoProps) {
+export default function GuideInfo({ notes, timing, timingTitle, credit, showTiming = true }: GuideInfoProps) {
   return (
-    <section className="panel mt-2 grid grid-cols-1 gap-10 p-6 md:p-8 lg:grid-cols-2">
+    <section className={`panel mt-2 grid grid-cols-1 gap-10 p-6 md:p-8 ${showTiming ? "lg:grid-cols-2" : ""}`}>
       <div>
         <p className="eyebrow">Antes de pelear</p>
         <h2 className="mt-2 text-heading-sm">Notas importantes</h2>
@@ -48,17 +50,19 @@ export default function GuideInfo({ notes, timing, timingTitle, credit }: GuideI
         )}
       </div>
 
-      <div>
-        <p className="eyebrow">Durante la pelea</p>
-        <h2 className="mt-2 text-heading-sm">Timing</h2>
-        <div className="mt-4">
-          {timing.length > 0 ? (
-            <TimingConsole title={timingTitle} steps={timing} />
-          ) : (
-            <p className="text-[15px] text-deep-fern">Aún no hay timing registrado.</p>
-          )}
+      {showTiming && (
+        <div>
+          <p className="eyebrow">Durante la pelea</p>
+          <h2 className="mt-2 text-heading-sm">Timing</h2>
+          <div className="mt-4">
+            {timing.length > 0 ? (
+              <TimingConsole title={timingTitle} steps={timing} />
+            ) : (
+              <p className="text-[15px] text-deep-fern">Aún no hay timing registrado.</p>
+            )}
+          </div>
         </div>
-      </div>
+      )}
     </section>
   );
 }

@@ -18,6 +18,13 @@ const sections = [
     image: "/Assets/backgrounds/pageBackgrounds/Bosses.webp",
   },
   {
+    href: "/arena",
+    eyebrow: "Kingdom Arena",
+    title: "Arena PvP",
+    description: "Los mejores equipos de la temporada con sus builds de toppings, biscuits y tesoros.",
+    image: "/Assets/backgrounds/pageBackgrounds/Pvp.webp",
+  },
+  {
     href: "/alianza",
     eyebrow: "Modo cooperativo",
     title: "Alianza",
@@ -77,7 +84,7 @@ export default function Home() {
               <Link
                 key={section.href}
                 href={section.href}
-                className="group panel overflow-hidden hover:border-circuit-border"
+                className="group panel overflow-hidden hover:border-circuit-border md:last:odd:col-span-2"
               >
                 <div className="relative h-44 w-full overflow-hidden md:h-52">
                   <Image

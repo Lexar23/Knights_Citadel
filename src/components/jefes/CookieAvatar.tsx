@@ -13,6 +13,7 @@ export default function CookieAvatar({ cookieId, size = 72, className = "" }: Co
   const cookie = getCookie(cookieId);
   const src = pickTileImage(getCookieImages(cookieId));
   const initials = cookie.name
+    .replace(/\(.*?\)/g, "")
     .replace(/Cookie/i, "")
     .trim()
     .split(/[\s-]+/)

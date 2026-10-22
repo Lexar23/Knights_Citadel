@@ -79,11 +79,13 @@ export default async function GremioDetailPage({ params }: GremioDetailPageProps
       </div>
 
       {/* Estadísticas rápidas */}
-      <dl className="mt-5 grid grid-cols-2 gap-5 md:grid-cols-4">
+      <dl className="mt-5 grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-5">
         {stats.map((s) => (
-          <div key={s.label} className="panel p-6">
+          <div key={s.label} className="panel min-w-0 px-3.5 py-4 md:p-6">
             <dt className="eyebrow">{s.label}</dt>
-            <dd className="mt-2 text-[18px] text-phosphor-white">{s.value}</dd>
+            <dd className="mt-2 text-[14px] leading-snug text-phosphor-white [overflow-wrap:anywhere] sm:text-[15px] md:text-[18px]">
+              {s.value}
+            </dd>
           </div>
         ))}
       </dl>

@@ -2,7 +2,7 @@
   "id": "season-3-2",
   "name": "Season 3-2",
   "category": "Cookie Alliance",
-  "current": true,
+  "current": false,
   "background": "/Assets/backgrounds/pageBackgrounds/Alliance.webp",
   "teams": [
     {

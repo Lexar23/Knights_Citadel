@@ -23,6 +23,10 @@ export const navigation: NavItem[] = [
     href: "/jefes",
   },
   {
+    label: "Arena",
+    href: "/arena",
+  },
+  {
     label: "Alianza",
     href: "/alianza",
   },
